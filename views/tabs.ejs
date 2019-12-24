@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='/stylesheets/tabs.css' />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/javascripts/Tabs.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>wellcom</h1>
+        <ul>
+            <li>
+                <button class="tabs" onclick="">
+                        <i class="fa fa-fw fa-shopping-cart"></i>
+                   <span>สินค้า</span>
+               </button>
+            </li>
+            <li>
+                <button class="tabs" id="chats" style="width: auto;">
+                        <i class="fa fa-fw fa-envelope"></i>
+              <span>ข้อความ</span>
+            </button>
+
+
+
+            </li>
+            <li>
+                <button class="tabs" onclick="location.href='/logout'">
+                        <i class="fa fa-fw fa-user"></i>
+                <span>ออกจากระบบ</span>
+            </button>
+            </li>
+            <li>
+                <button class="tabs" id="web-about">
+                        <i data-vi="website" data-vi-primary="#ffffff"></i>
+                <span>เกี่ยวกับเว็ปนี้</span>
+            </button>
+            </li>
+        </ul>
+    </header>
+
+    <form action="/" method="POST" id="myChat" class="Vchat">
+        <ul id="messages"></ul>
+        <input type="text" id="txt" autocomplete="off" autofocus="on" placeholder="Type your messages here ..." />
+        <button>Send</button>
+    </form>
+
+
+    <div class="inputwithIcon">
+        <input class="var-search" type="search" name="search" placeholder="Search" aria-label="Search">
+        <i data-vi="search" data-vi-size="76"></i>
+    </div>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+</body>
+
+</html>

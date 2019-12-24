@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.login-form {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: chartreuse;
+}
+
+#logo {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    margin-left: 1%;
+    font-style: oblique;
+}
+
+.log-rigth {
+    margin-top: 20px;
+    float: right;
+    margin-right: 1%;
+}
+
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 8px;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    padding: 9px 20px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.login-form .btn1 {
+    background-color: chocolate;
+    color: black;
+}
+
+
+/* style css register */
+
+.rigister-form {
+    width: 40%;
+    float: right;
+    margin-right: 2%;
+}
+
+.rigister-form input[type=text],
+.rigister-form input[type=email] {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.rigister-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.rigister-form button:hover {
+    opacity: 0.8;
+}

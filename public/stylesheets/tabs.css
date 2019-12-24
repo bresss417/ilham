@@ -1,0 +1,163 @@
+a {
+    color: #00B7FF;
+}
+
+iroot {
+    --green: #27ae60;
+    --lightblue: #3498db;
+    --gray: #95a5a6;
+    --red: #e74c3c;
+    --orenge: #f1c40f;
+    --white: white;
+    --black: black;
+    --blue: blue;
+    --lightgray: #f1f1f1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    color: inherit;
+    background: none;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+header,
+header ul,
+header button {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header {
+    justify-content: space-between;
+    max-width: 100%;
+    padding-left: 18px;
+    margin: 0 auto;
+    border-redius: 5px;
+    background-color: #3498db;
+    box-shadow: 10px 10px 5px white;
+}
+
+header h1 {
+    margin-left: 9px;
+    font-size: 30px;
+}
+
+header button {
+    border: none;
+    padding: 15px;
+    overflow: hidden;
+    transition: filter 0.25s;
+    margin-right: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+header button:hover {
+    background-color: gold;
+}
+
+
+/* sercth input */
+
+input[type=search] {
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-size: 20px;
+}
+
+input[type=search]:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.inputwithIcon input[type=search] {
+    padding-left: 40px;
+}
+
+.inputwithIcon {
+    /*
+  position: relative;
+  margin-left: 17%;
+  margin-top: 5%;
+  */
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 8%;
+    margin-top: 4%;
+}
+
+.inputwithIcon i {
+    left: 0;
+    top: 8;
+    text-align: center;
+}
+
+
+/* pop up Chats */
+
+.Vchat {
+    display: none;
+    position: fixed;
+    width: 24%;
+    height: 60%;
+    z-index: 9;
+    right: 105px;
+    border: 1px solid #000;
+    background-color: darkgray;
+}
+
+form input {
+    width: 80%;
+    margin-top: 334px;
+    height: 10%;
+    border: 1px solid #000;
+}
+
+.Vchat button {
+    width: 60px;
+    background-color: darkcyan;
+    height: 10%;
+    margin: 0;
+    border: 1px #000;
+}
+
+#messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background-color: #eee;
+}
