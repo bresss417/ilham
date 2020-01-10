@@ -3,8 +3,8 @@ var mysql = require('mysql');
 var router = express.Router();
 var session = require('express-session');
 var bodyparser = require('body-parser');
-var http = require('http');
-var io = require('socket.io')(http);
+/* var http = require('http');
+var io = require('socket.io')(http); */
 
 let conn = mysql.createConnection({
     host: 'localhost',
@@ -85,7 +85,7 @@ router.get('/logout', function(req, res, next) {
     }
 });
 
-io.sockets.on('connection', function(socket) {
+/* io.sockets.on('connection', function(socket) {
     socket.on('username', function(username) {
         socket.username = username;
         io.emit('is_online', "🔵 <i>" + socket.username + "join the chat...</i>");
@@ -96,6 +96,6 @@ io.sockets.on('connection', function(socket) {
     socket.on('chat_massege', function(massege) {
         io.emit('chat_massege', "<strong>" + socket.username + "</strong>:" + massege);
     });
-})
+}) */
 
 module.exports = router;
